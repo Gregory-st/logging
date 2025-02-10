@@ -1,0 +1,38 @@
+C:\Users\User\source\repos\Учебная часть\Учебная часть\bin\Debug\Учебная часть.exe.config
+C:\Users\User\source\repos\Учебная часть\Учебная часть\bin\Debug\Учебная часть.exe
+C:\Users\User\source\repos\Учебная часть\Учебная часть\bin\Debug\Учебная часть.pdb
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная часть.csproj.AssemblyReference.cache
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Properties.Resources.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная часть.csproj.GenerateResource.cache
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная часть.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная часть.exe
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная часть.pdb
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Glavn.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_Otchisl.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Gruppa.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_Perevod.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_studenta.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_Vipusk.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Otchislenie.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Perevod.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Personal_dann.resources
+C:\Users\User\source\repos\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Slovar.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\bin\Debug\Учебная часть.exe.config
+C:\Users\User\Desktop\Учебная часть\Учебная часть\bin\Debug\Учебная часть.exe
+C:\Users\User\Desktop\Учебная часть\Учебная часть\bin\Debug\Учебная часть.pdb
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная часть.csproj.AssemblyReference.cache
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Glavn.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Gruppa.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_Otchisl.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_Perevod.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_studenta.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Lich_delo_Vipusk.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Otchislenie.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Perevod.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Personal_dann.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Properties.Resources.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная_часть.Slovar.resources
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная часть.csproj.GenerateResource.cache
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная часть.csproj.CoreCompileInputs.cache
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная часть.exe
+C:\Users\User\Desktop\Учебная часть\Учебная часть\obj\Debug\Учебная часть.pdb
