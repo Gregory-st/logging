@@ -1,5 +1,4 @@
 ﻿using System;
-
 namespace DataBaseWorker.Entites
 {
     public class EntityPersonalFileActive
@@ -30,5 +29,7 @@ namespace DataBaseWorker.Entites
             IdTransfer = idTransfer;
             IdGroup = idGroup;
         }
+
+        public static Builders.PersonalFileActiveBuilder GetBuilder() => new Builders.PersonalFileActiveBuilder();
     }
 }

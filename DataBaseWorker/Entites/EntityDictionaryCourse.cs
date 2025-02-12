@@ -74,7 +74,7 @@ namespace DataBaseWorker.Entites
         }
     }
 
-    public class CourseNode
+    internal class CourseNode
     {
         public string Character { get; set; }
         public string Description { get; set; }

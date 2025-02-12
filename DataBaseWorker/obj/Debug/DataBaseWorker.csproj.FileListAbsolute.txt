@@ -1,0 +1,2 @@
+D:\321\logging\DataBaseWorker\obj\Debug\DataBaseWorker.csprojAssemblyReference.cache
+D:\321\logging\DataBaseWorker\obj\Debug\DataBaseWorker.csproj.CoreCompileInputs.cache

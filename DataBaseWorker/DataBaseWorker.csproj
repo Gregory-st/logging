@@ -41,25 +41,35 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Context\OleConnectionContext.cs" />
+    <Compile Include="Context\OleDataBaseContext.cs" />
     <Compile Include="Entites\Builders\BaseAdmissionBuilder.cs" />
     <Compile Include="Entites\Builders\ExpulsionBuilder.cs" />
     <Compile Include="Entites\Builders\GroupBuilder.cs" />
+    <Compile Include="Entites\Builders\PersonalFileActiveBuilder.cs" />
+    <Compile Include="Entites\Builders\PersonalFileExpulsionBuilder.cs" />
     <Compile Include="Entites\Builders\PersonBuilder.cs" />
+    <Compile Include="Entites\Builders\TransferBuilder.cs" />
     <Compile Include="Entites\EntityDictionaryCourse.cs" />
     <Compile Include="Entites\EntityBaseAdmission.cs" />
     <Compile Include="Entites\EntityExpulsion.cs" />
     <Compile Include="Entites\EntityGroup.cs" />
     <Compile Include="Entites\EntityPerson.cs" />
     <Compile Include="Entites\EntityPersonalFileActive.cs" />
-    <Compile Include="Entites\EntityPersonalFileEnd.cs" />
     <Compile Include="Entites\EntityPersonalFileExpulsion.cs" />
-    <Compile Include="Entites\EntityPersonalFileTransfer.cs" />
     <Compile Include="Entites\EntityTransfer.cs" />
+    <Compile Include="Entites\Models\ModelExpulsion.cs" />
+    <Compile Include="Entites\Models\ModelGroup.cs" />
+    <Compile Include="Entites\Models\ModelPerson.cs" />
+    <Compile Include="Entites\Models\ModelPersonalExpulsion.cs" />
+    <Compile Include="Entites\Models\ModelPersonalFileActive.cs" />
+    <Compile Include="Entites\Models\ModelTransfer.cs" />
     <Compile Include="Exceptions\NotFoundDictionaryException.cs" />
+    <Compile Include="Exceptions\NotFoundFileConfigConnectionException.cs" />
+    <Compile Include="Exceptions\NotFoundFileDataBaseException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositores\RepositoryPerson.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Entites\Models\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

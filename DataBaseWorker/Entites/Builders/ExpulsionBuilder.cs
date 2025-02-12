@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace DataBaseWorker.Entites.Builders
 {
@@ -42,5 +38,27 @@ namespace DataBaseWorker.Entites.Builders
             course = Course;
             return this;
         }
+        public ExpulsionBuilder SetGroup(string Group)
+        {
+            group = Group;
+            return this;
+        }
+        public ExpulsionBuilder SetSpeciality(string Speciality)
+        {
+            speciality = Speciality;
+            return this;
+        }
+        public ExpulsionBuilder SetDateOrder(DateTime DateOrder)
+        {
+            dateOrder = DateOrder;
+            return this;
+        }
+        public ExpulsionBuilder SetDateOrder(string DateOrder)
+        {
+            dateOrder = DateTime.Parse(DateOrder);
+            return this;
+        }
+
+        public EntityExpulsion Build() => new EntityExpulsion(id, cause, ratings, course, group, speciality, dateOrder);
     }
 }

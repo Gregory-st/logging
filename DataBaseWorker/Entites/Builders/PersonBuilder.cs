@@ -35,6 +35,11 @@ namespace DataBaseWorker.Entites.Builders
             DateOfBorn = dateOfBorn;
             return this;
         }
+        public PersonBuilder SetDateOfBorn(string dateOfBorn)
+        {
+            DateOfBorn = DateTime.Parse(dateOfBorn);
+            return this;
+        }
 
         public EntityPerson Build() => new EntityPerson(ID, FirstName, Name, LastName, DateOfBorn);
     }

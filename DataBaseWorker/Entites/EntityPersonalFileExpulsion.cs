@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 
 namespace DataBaseWorker.Entites
 {
@@ -8,6 +9,7 @@ namespace DataBaseWorker.Entites
         public int Course { get; set; }
         public int BaseClass { get; set; }
         public DateTime DateReceipt { get; set; }
+        public readonly List<ushort> Ratings;
         public string Speciality { get; set; }
         public string Group { get; set; }
         public int IdPerson { get; set; }
@@ -16,9 +18,10 @@ namespace DataBaseWorker.Entites
 
         public EntityPersonalFileExpulsion()
         {
+            Ratings = new List<ushort>();
         }
 
-        public EntityPersonalFileExpulsion(long iD, int course, int baseClass, DateTime dateReceipt, string speciality, string group, int idPerson, int idBaseAdmission, int idOrder)
+        public EntityPersonalFileExpulsion(long iD, int course, ushort[] ratings, int baseClass, DateTime dateReceipt, string speciality, string group, int idPerson, int idBaseAdmission, int idOrder)
         {
             ID = iD;
             Course = course;
@@ -29,6 +32,10 @@ namespace DataBaseWorker.Entites
             IdPerson = idPerson;
             IdBaseAdmission = idBaseAdmission;
             IdOrder = idOrder;
+            Ratings = new List<ushort>();
+            Ratings.AddRange(ratings);
         }
+
+        public static Builders.PersonalFileExpulsionBuilder GetBuilder() => new Builders.PersonalFileExpulsionBuilder(); 
     }
 }
