@@ -1,4 +1,6 @@
-﻿namespace DataBaseWorker.Entites.Builders
+﻿using System;
+
+namespace DataBaseWorker.Entites.Builders
 {
     public class BaseAdmissionBuilder
     {
@@ -8,6 +10,11 @@
         public BaseAdmissionBuilder SetId(long ID)
         {
             id = ID;
+            return this;
+        }
+        public BaseAdmissionBuilder SetId(string ID)
+        {
+            id = Convert.ToInt64(ID);
             return this;
         }
         public BaseAdmissionBuilder SetName(string Name) 

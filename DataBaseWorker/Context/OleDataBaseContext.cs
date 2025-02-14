@@ -19,6 +19,8 @@ namespace DataBaseWorker.Context
 
         public OleDataBaseContext(OleDbConnectionStringBuilder connection) : base(connection)
         {
+            base.OpenConnect();
+
             BaseAdmissions = new OleDbDataAdapter(string.Format(pattern, TableAdmissions), base.connection);
             DictionaryCourses = new OleDbDataAdapter(string.Format(pattern, TableDictionary), base.connection);
             Expulsions = new OleDbDataAdapter(string.Format(pattern, TableExpulsion), base.connection);
@@ -29,6 +31,8 @@ namespace DataBaseWorker.Context
             PersonalFilesTransfering = new OleDbDataAdapter(string.Format(pattern, TableTransfering), base.connection);
             PersonalFilesExpulsing = new OleDbDataAdapter(string.Format(pattern, TableExpulsing), base.connection);
             Transfers = new OleDbDataAdapter(string.Format(pattern, TableTransfer), base.connection);
+
+            base.CloseConnect();
         }
 
         public OleDataBaseContext() { }

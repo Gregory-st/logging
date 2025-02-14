@@ -68,6 +68,7 @@
     <Compile Include="Exceptions\NotFoundFileConfigConnectionException.cs" />
     <Compile Include="Exceptions\NotFoundFileDataBaseException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositores\RepositoryGroup.cs" />
     <Compile Include="Repositores\RepositoryPerson.cs" />
   </ItemGroup>
   <ItemGroup />

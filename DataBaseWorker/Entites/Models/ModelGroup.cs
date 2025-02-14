@@ -14,8 +14,6 @@ namespace DataBaseWorker.Entites.Models
             .Append(base.Number)
             .ToString();
 
-        public int CountStudent => base.Count;
-
         public static ModelGroup GetModel(EntityGroup Group) => new ModelGroup(Group);
     }
 }

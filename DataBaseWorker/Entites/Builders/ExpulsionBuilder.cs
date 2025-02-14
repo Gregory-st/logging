@@ -17,6 +17,11 @@ namespace DataBaseWorker.Entites.Builders
             id = Id;
             return this;
         }
+        public ExpulsionBuilder SetId(string Id)
+        {
+            id = Convert.ToInt64(Id);
+            return this;
+        }
         public ExpulsionBuilder SetCause(string Cause)
         {
             cause = Cause;
@@ -33,9 +38,26 @@ namespace DataBaseWorker.Entites.Builders
             }
             return this;
         }
+        public ExpulsionBuilder SetRatings(string Rating)
+        {
+            string[] rating = Rating.Split('/');
+            ratings = new ushort[rating.Length];
+            int j = 0;
+            foreach (string i in rating)
+            {
+                ratings[j] = Convert.ToUInt16(i);
+                j++;
+            }
+            return this;
+        }
         public ExpulsionBuilder SetCourse(int Course)
         {
             course = Course;
+            return this;
+        }
+        public ExpulsionBuilder SetCourse(string Course)
+        {
+            course = Convert.ToInt32(Course);
             return this;
         }
         public ExpulsionBuilder SetGroup(string Group)

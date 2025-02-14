@@ -15,6 +15,11 @@ namespace DataBaseWorker.Entites.Builders
             ID = id;
             return this;
         }
+        public PersonBuilder SetId(string id)
+        {
+            ID = Convert.ToInt64(id);
+            return this;
+        }
         public PersonBuilder SetFirstName(string firstName)
         {
             FirstName = firstName;
