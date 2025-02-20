@@ -7,14 +7,20 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using DataBaseWorker.Context;
 
 namespace Учебная_часть
 {
     public partial class Glavn : Form
     {
+        OleDataBaseContext context;
         public Glavn()
         {
             InitializeComponent();
+
+            context = new OleDataBaseContext();
+            context.OpenConfigOfFile();
+
             //Личные дела
             menuStrip1.ForeColor = Color.White;
             ToolStripMenuItem fileItem = new ToolStripMenuItem("Личные дела");
@@ -53,7 +59,7 @@ namespace Учебная_часть
         void menuItem_CheckedChanged1(object sender, EventArgs e)
         {
             menuStrip1.ForeColor = Color.White;
-            Lich_delo_studenta a = new Lich_delo_studenta();
+            Lich_delo_studenta a = new Lich_delo_studenta(context);
             a.Show();
             this.Hide();
         }
