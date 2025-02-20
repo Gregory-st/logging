@@ -1,0 +1,90 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\321\\logging\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|d:\\321\\logging\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\lich_delo_studenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|solutionrelative:\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\lich_delo_studenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|d:\\321\\logging\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\lich_delo_studenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|solutionrelative:\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\lich_delo_studenta.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|d:\\321\\logging\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\glavn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|solutionrelative:\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\glavn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|d:\\321\\logging\\\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\glavn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E38E0E9E-8A5A-48B9-B80C-7BD6914BD7F5}|\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C.csproj|solutionrelative:\u0443\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\glavn.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Lich_delo_studenta.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs",
+              "RelativeDocumentMoniker": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs",
+              "ToolTip": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T14:20:25.757Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Lich_delo_studenta.cs",
+              "DocumentMoniker": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs",
+              "RelativeDocumentMoniker": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs",
+              "ToolTip": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs",
+              "RelativeToolTip": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Lich_delo_studenta.cs",
+              "ViewState": "AgIAADsAAAAAAAAAAAAIwFsAAABTAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T14:08:28.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Glavn.cs",
+              "DocumentMoniker": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs",
+              "RelativeDocumentMoniker": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs",
+              "ToolTip": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs",
+              "RelativeToolTip": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs",
+              "ViewState": "AgIAACsAAAAAAAAAAAAgwD0AAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:53:34.404Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Glavn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs",
+              "RelativeDocumentMoniker": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs",
+              "ToolTip": "D:\\321\\logging\\\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "\u0423\u0447\u0435\u0431\u043D\u0430\u044F \u0447\u0430\u0441\u0442\u044C\\Glavn.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T13:53:20.281Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
