@@ -13,7 +13,7 @@ namespace DataBaseWorker.Entites
         public string Speciality { get; set; }
         public string Group { get; set; }
         public int IdPerson { get; set; }
-        public int IdBaseAdmission { get; set; }
+        public string BaseAdmission { get; set; }
         public int IdOrder { get; set; }
 
         public EntityPersonalFileExpulsion()
@@ -21,7 +21,7 @@ namespace DataBaseWorker.Entites
             Ratings = new List<ushort>();
         }
 
-        public EntityPersonalFileExpulsion(long iD, int course, ushort[] ratings, int baseClass, DateTime dateReceipt, string speciality, string group, int idPerson, int idBaseAdmission, int idOrder)
+        public EntityPersonalFileExpulsion(long iD, int course, ushort[] ratings, int baseClass, DateTime dateReceipt, string speciality, string group, int idPerson, string BaseAdmission, int idOrder)
         {
             ID = iD;
             Course = course;
@@ -30,7 +30,7 @@ namespace DataBaseWorker.Entites
             Speciality = speciality;
             Group = group;
             IdPerson = idPerson;
-            IdBaseAdmission = idBaseAdmission;
+            this.BaseAdmission = BaseAdmission;
             IdOrder = idOrder;
             Ratings = new List<ushort>();
             Ratings.AddRange(ratings);

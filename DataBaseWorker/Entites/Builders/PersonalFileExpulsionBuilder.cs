@@ -12,15 +12,15 @@ namespace DataBaseWorker.Entites.Builders
         private string speciality;
         private string group;
         private int idPerson;
-        private int idBaseAdmission;
+        private string BaseAdmission;
         private int idOrder;
 
-        public PersonalFileExpulsionBuilder SetID(long ID)
+        public PersonalFileExpulsionBuilder SetId(long ID)
         {
             id = ID;
             return this;
         }
-        public PersonalFileExpulsionBuilder SetID(string ID)
+        public PersonalFileExpulsionBuilder SetId(string ID)
         {
             id = Convert.ToInt64(ID);
             return this;
@@ -33,6 +33,11 @@ namespace DataBaseWorker.Entites.Builders
         public PersonalFileExpulsionBuilder SetCourse(string Course)
         {
             course = Convert.ToInt32(Course);
+            return this;
+        }
+        public PersonalFileExpulsionBuilder SetGroup(string Group)
+        {
+            group = Group;
             return this;
         }
         public PersonalFileExpulsionBuilder SetBaseClass(int BaseClass)
@@ -70,14 +75,9 @@ namespace DataBaseWorker.Entites.Builders
             idPerson = Convert.ToInt32(IdPerson);
             return this;
         }
-        public PersonalFileExpulsionBuilder SetIdBaseAdmission(int IdBaseAdmission)
+        public PersonalFileExpulsionBuilder SetBaseAdmission(string BaseAdmission)
         {
-            idBaseAdmission = IdBaseAdmission;
-            return this;
-        }
-        public PersonalFileExpulsionBuilder SetIdBaseAdmission(string IdBaseAdmission)
-        {
-            idBaseAdmission = Convert.ToInt32(IdBaseAdmission);
+            this.BaseAdmission = BaseAdmission;
             return this;
         }
         public PersonalFileExpulsionBuilder SetIdOrder(int IdOrder)
@@ -110,6 +110,6 @@ namespace DataBaseWorker.Entites.Builders
             return this;
         }
 
-        public EntityPersonalFileExpulsion Build() => new EntityPersonalFileExpulsion(id, course, ratings, baseClass, dateReceipt, speciality, group, idPerson, idBaseAdmission, idOrder);
+        public EntityPersonalFileExpulsion Build() => new EntityPersonalFileExpulsion(id, course, ratings, baseClass, dateReceipt, speciality, group, idPerson, BaseAdmission, idOrder);
     }
 }

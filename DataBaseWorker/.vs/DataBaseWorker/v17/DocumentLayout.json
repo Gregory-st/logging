@@ -1,0 +1,107 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\321\\logging\\DataBaseWorker\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|d:\\321\\logging\\databaseworker\\repositores\\repositorypersonalfileactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|solutionrelative:repositores\\repositorypersonalfileactive.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|d:\\321\\logging\\databaseworker\\entites\\models\\modelpersonalexpulsion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|solutionrelative:entites\\models\\modelpersonalexpulsion.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|d:\\321\\logging\\databaseworker\\entites\\models\\modeltransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|solutionrelative:entites\\models\\modeltransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|D:\\321\\logging\\DataBaseWorker\\entites\\entitytransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|solutionrelative:entites\\entitytransfer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|D:\\321\\logging\\DataBaseWorker\\repositores\\repositoryperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D5DD2FB0-973F-4452-8666-FA2E32F4A63F}|DataBaseWorker.csproj|solutionrelative:repositores\\repositoryperson.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "RepositoryPersonalFileActive.cs",
+              "DocumentMoniker": "D:\\321\\logging\\DataBaseWorker\\Repositores\\RepositoryPersonalFileActive.cs",
+              "RelativeDocumentMoniker": "Repositores\\RepositoryPersonalFileActive.cs",
+              "ToolTip": "D:\\321\\logging\\DataBaseWorker\\Repositores\\RepositoryPersonalFileActive.cs",
+              "RelativeToolTip": "Repositores\\RepositoryPersonalFileActive.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAkwDQAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:08:12.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ModelPersonalExpulsion.cs",
+              "DocumentMoniker": "D:\\321\\logging\\DataBaseWorker\\Entites\\Models\\ModelPersonalExpulsion.cs",
+              "RelativeDocumentMoniker": "Entites\\Models\\ModelPersonalExpulsion.cs",
+              "ToolTip": "D:\\321\\logging\\DataBaseWorker\\Entites\\Models\\ModelPersonalExpulsion.cs",
+              "RelativeToolTip": "Entites\\Models\\ModelPersonalExpulsion.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:07:47.857Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ModelTransfer.cs",
+              "DocumentMoniker": "D:\\321\\logging\\DataBaseWorker\\Entites\\Models\\ModelTransfer.cs",
+              "RelativeDocumentMoniker": "Entites\\Models\\ModelTransfer.cs",
+              "ToolTip": "D:\\321\\logging\\DataBaseWorker\\Entites\\Models\\ModelTransfer.cs",
+              "RelativeToolTip": "Entites\\Models\\ModelTransfer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:07:20.152Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "EntityTransfer.cs",
+              "DocumentMoniker": "D:\\321\\logging\\DataBaseWorker\\Entites\\EntityTransfer.cs",
+              "RelativeDocumentMoniker": "Entites\\EntityTransfer.cs",
+              "ToolTip": "D:\\321\\logging\\DataBaseWorker\\Entites\\EntityTransfer.cs",
+              "RelativeToolTip": "Entites\\EntityTransfer.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:07:20.324Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RepositoryPerson.cs",
+              "DocumentMoniker": "D:\\321\\logging\\DataBaseWorker\\Repositores\\RepositoryPerson.cs",
+              "RelativeDocumentMoniker": "Repositores\\RepositoryPerson.cs",
+              "ToolTip": "D:\\321\\logging\\DataBaseWorker\\Repositores\\RepositoryPerson.cs",
+              "RelativeToolTip": "Repositores\\RepositoryPerson.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAA6AAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-20T12:07:20.324Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

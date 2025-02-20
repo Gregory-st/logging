@@ -2,13 +2,13 @@
 
 namespace DataBaseWorker.Entites
 {
-    public static class EntityDictionaryCourse
+    public class EntityDictionaryCourse
     {
-        private static CourseNode head;
-        private static CourseNode tail;
+        private CourseNode head;
+        private CourseNode tail;
         public static int Count { get; private set; }
 
-        public static void Add(string Character, string Description)
+        public void Add(string Character, string Description)
         {
             CourseNode node = new CourseNode(Character, Description);
             if (head == null)
@@ -19,9 +19,9 @@ namespace DataBaseWorker.Entites
             Count++;
         }
 
-        public static bool Remove(string Character, string Description)
+        public bool Remove(string Character, string Description)
         {
-            ref CourseNode current = ref head;
+            CourseNode current = head;
             CourseNode previous = null;
 
             while(current != null && previous.Character != null && previous.Description != null)
@@ -49,9 +49,9 @@ namespace DataBaseWorker.Entites
             return false;
         }
 
-        public static string GetCharacter(string description)
+        public string GetCharacter(string description)
         {
-            ref CourseNode node = ref head;
+            CourseNode node = head;
             while(node != null)
             {
                 if(node.Description == description)
@@ -61,9 +61,9 @@ namespace DataBaseWorker.Entites
             throw new NotFoundDictionaryException("Не коректное наименование или данной специальности не существует");
         }
 
-        public static string GetDescripton(string character)
+        public string GetDescripton(string character)
         {
-            ref CourseNode node = ref head;
+            CourseNode node = head;
             while (node != null)
             {
                 if (node.Character == character)

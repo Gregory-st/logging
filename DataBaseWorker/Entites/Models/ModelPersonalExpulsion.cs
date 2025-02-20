@@ -4,7 +4,7 @@ namespace DataBaseWorker.Entites.Models
 {
     public class ModelPersonalExpulsion : EntityPersonalFileExpulsion
     {
-        public ModelPersonalExpulsion(EntityPersonalFileExpulsion expulsion) : base(expulsion.ID, expulsion.Course, expulsion.Ratings.ToArray(), expulsion.BaseClass, expulsion.DateReceipt, expulsion.Speciality, expulsion.Group, expulsion.IdPerson, expulsion.IdBaseAdmission, expulsion.IdOrder)
+        public ModelPersonalExpulsion(EntityPersonalFileExpulsion expulsion) : base(expulsion.ID, expulsion.Course, expulsion.Ratings.ToArray(), expulsion.BaseClass, expulsion.DateReceipt, expulsion.Speciality, expulsion.Group, expulsion.IdPerson, expulsion.BaseAdmission, expulsion.IdOrder)
         { }
 
         public string GetDate() => base.DateReceipt.ToShortDateString();

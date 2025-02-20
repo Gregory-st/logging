@@ -29,6 +29,11 @@ namespace DataBaseWorker.Entites.Builders
             course = Course;
             return this;
         }
+        public PersonalFileActiveBuilder SetCourse(string Course)
+        {
+            course = Convert.ToInt32(Course);
+            return this;
+        }
         public PersonalFileActiveBuilder SetBaseClass(int BaseClass)
         {
             baseClass = BaseClass;
@@ -90,6 +95,6 @@ namespace DataBaseWorker.Entites.Builders
             return this;
         }
 
-        public EntityPersonalFileActive Builder() => new EntityPersonalFileActive(id, course, baseClass, dateReceipt, speciality, idPerson, idBaseAdmission, idTransfer, idGroup);
+        public EntityPersonalFileActive Build() => new EntityPersonalFileActive(id, course, baseClass, dateReceipt, speciality, idPerson, idBaseAdmission, idTransfer, idGroup);
     }
 }
