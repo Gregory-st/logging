@@ -1,0 +1,12 @@
+Microsoft.ACE.OLEDB.12.0
+Студенты.accdb
+Студенты.accdb
+TableAdmissions:
+TableDictionary:
+TableExpulsion:
+TablePerson:
+TableGroup:
+TableActive:
+TableTransfering:
+TableExpulsing:
+TableTransfer:
