@@ -55,6 +55,8 @@ namespace DataBaseWorker.Context
                 .AppendLine()
                 .Append(nameof(TableActive)).Append(":").Append(TableActive)
                 .AppendLine()
+                .Append(nameof(TableEnding)).Append(":").Append(TableEnding)
+                .AppendLine()
                 .Append(nameof(TableTransfering)).Append(":").Append(TableTransfering)
                 .AppendLine()
                 .Append(nameof(TableExpulsing)).Append(":").Append(TableExpulsing)
@@ -68,7 +70,17 @@ namespace DataBaseWorker.Context
             file.Close();
         }
 
-        public void OpenConfigOfFile()
+        protected void DefaultConnection()
+        {
+            connection.ConnectionString = new OleDbConnectionStringBuilder()
+            { 
+                Provider = "Microsoft.ACE.OLEDB.12.0",
+                DataSource = "Учебная часть.accdb"
+            }
+            .ToString();
+        }
+
+        public virtual void OpenConfigOfFile()
         {
             string[] lines = File.ReadAllLines(@"config\connect.txt");
 
@@ -76,8 +88,8 @@ namespace DataBaseWorker.Context
 
             if (!File.Exists(@"config\connect.txt")) 
             {
+                DefaultConnection();
                 SaveConfigInFile();
-                return;
             };
 
             if (File.Exists(lines[2]))
@@ -100,9 +112,10 @@ namespace DataBaseWorker.Context
             TablePerson = lines[6].Split(':')[1];
             TableGroup = lines[7].Split(':')[1];
             TableActive = lines[8].Split(':')[1];
-            TableTransfering = lines[9].Split(':')[1];
-            TableExpulsing = lines[10].Split(':')[1];
-            TableTransfer = lines[10].Split(':')[1];
+            TableEnding = lines[9].Split(':')[1];
+            TableTransfering = lines[10].Split(':')[1];
+            TableExpulsing = lines[11].Split(':')[1];
+            TableTransfer = lines[12].Split(':')[1];
         }
     }
 }
