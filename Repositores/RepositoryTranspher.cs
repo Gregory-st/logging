@@ -43,6 +43,35 @@ namespace DataBaseWorker.Repositores
             return transfers;
         }
 
+        public ModelTransfer GetById(long ID)
+        {
+            DataSet data = new DataSet();
+            DataTable table;
+            ModelTransfer transfer = null;
+
+            context.OpenConnect();
+            context.Transfers.Fill(data);
+            table = data.Tables[0];
+
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                if (Convert.ToInt64(table.Rows[i][0]) != ID) continue;
+
+                transfer = new ModelTransfer(EntityTransfer
+                    .GetBulder()
+                    .SetId(table.Rows[i][0].ToString())
+                    .SetTrigger(table.Rows[i][1].ToString())
+                    .SetRatings(table.Rows[i][2].ToString())
+                    .SetCourse(table.Rows[i][3].ToString())
+                    .SetSpecial(table.Rows[i][4].ToString())
+                    .Build());
+                break;
+            }
+
+            context.CloseConnect();
+            return transfer;
+        }
+
         public void Add(EntityTransfer transfer)
         {
             DataSet data = new DataSet();

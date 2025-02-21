@@ -19,6 +19,13 @@ namespace DataBaseWorker.Context
 
         public OleDataBaseContext(OleDbConnectionStringBuilder connection) : base(connection)
         {
+            SetAdapters();
+        }
+
+        public OleDataBaseContext() { }
+
+        private void SetAdapters()
+        {
             base.OpenConnect();
 
             BaseAdmissions = new OleDbDataAdapter(string.Format(pattern, TableAdmissions), base.connection);
@@ -35,6 +42,10 @@ namespace DataBaseWorker.Context
             base.CloseConnect();
         }
 
-        public OleDataBaseContext() { }
+        public override void OpenConfigOfFile()
+        {
+            base.OpenConfigOfFile();
+            SetAdapters();
+        }
     }
 }

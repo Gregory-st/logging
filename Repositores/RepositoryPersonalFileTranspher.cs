@@ -46,6 +46,38 @@ namespace DataBaseWorker.Repositores
             return tranFiles;
         }
 
+        public ModelPersonalExpulsion GetById(long ID)
+        {
+            DataSet data = new DataSet();
+            DataTable table;
+
+            context.OpenConnect();
+            context.PersonalFilesTransfering.Fill(data);
+            table = data.Tables[0];
+
+            ModelPersonalExpulsion tranFile = null;
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                if (Convert.ToInt64(table.Rows[i][0]) != ID) continue;
+                tranFile = new ModelPersonalExpulsion(EntityPersonalFileExpulsion
+                    .GetBuilder()
+                    .SetId(table.Rows[i]["Код"].ToString())
+                    .SetIdOrder(table.Rows[i]["Код_приказа"].ToString())
+                    .SetBaseClass(table.Rows[i]["Класс"].ToString())
+                    .SetDateReceipt(table.Rows[i]["Дата_поступления"].ToString())
+                    .SetCourse(table.Rows[i]["Курс"].ToString())
+                    .SetGroup(table.Rows[i]["Группа"].ToString())
+                    .SetSpeciality(table.Rows[i]["Специальность"].ToString())
+                    .SetIdPerson(table.Rows[i]["Код_персоны"].ToString())
+                    .SetBaseAdmission(table.Rows[i]["База_поступления"].ToString())
+                    .Build()
+                    );
+                break;
+            }
+            context.CloseConnect();
+            return tranFile;
+        }
+
         public void Add(EntityPersonalFileExpulsion fileTransp)
         {
             DataSet data = new DataSet();

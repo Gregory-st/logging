@@ -47,6 +47,39 @@ namespace DataBaseWorker.Repositores
             context.CloseConnect();
             return activeFiles;
         }
+        public ModelPersonalFileActive GetById(long ID)
+        {
+            DataSet data = new DataSet();
+            DataTable table;
+
+            context.OpenConnect();
+            context.PersonalFilesActive.Fill(data);
+            table = data.Tables[0];
+
+            ModelPersonalFileActive activeFile = null;
+            for (int i = 0; i < table.Rows.Count; i++)
+            {
+                if (Convert.ToInt64(table.Rows[i][0]) != ID) continue;
+
+                activeFile = new ModelPersonalFileActive(EntityPersonalFileActive
+                    .GetBuilder()
+                    .SetId(table.Rows[i]["Код"].ToString())
+                    .SetIdBaseAdmission(table.Rows[i]["Код_базы_поступления"].ToString())
+                    .SetCourse(table.Rows[i]["Курс"].ToString())
+                    .SetBaseClass(table.Rows[i]["Класс"].ToString())
+                    .SetDateReceipt(table.Rows[i]["Дата_поступления"].ToString())
+                    .SetSpeciality(table.Rows[i]["Специальность"].ToString())
+                    .SetIdPerson(table.Rows[i]["Код_персоны"].ToString())
+                    .SetIdTransfer(table.Rows[i]["Код_перевода"].ToString())
+                    .SetIdGroup(table.Rows[i]["Код_группы"].ToString())
+                    .Build()
+                    );
+
+                break;
+            }
+            context.CloseConnect();
+            return activeFile;
+        }
 
         public ModelPersonalFileActive[] GetSortByGroups()
         {
