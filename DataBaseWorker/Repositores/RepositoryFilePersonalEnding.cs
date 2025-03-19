@@ -1,6 +1,7 @@
 ﻿using DataBaseWorker.Context;
 using DataBaseWorker.Entites;
 using DataBaseWorker.Entites.Models;
+using DataBaseWorker.Exceptions;
 using System;
 using System.Data;
 using System.Data.OleDb;
@@ -45,6 +46,9 @@ namespace DataBaseWorker.Repositores
             context.CloseConnect();
             return endingFiles;
         }
+        public ModelPersonalExpulsion GetById(long ID) => Array.Find(Get(), i => i.ID == ID) ?? throw new NotFoundFilePersonWithIdException();
+        public ModelPersonalExpulsion GetByIdPerson(long ID) => Array.Find(Get(), i => i.IdPerson == ID) ?? throw new NotFoundFilePersonWithIdException("личного дела");
+        public ModelPersonalExpulsion GetByIdOrder(long ID) => Array.Find(Get(), i => i.IdOrder == ID) ?? throw new NotFoundFilePersonWithIdException("приказа");
 
         public void Add(EntityPersonalFileExpulsion fileEnding)
         {
@@ -119,7 +123,7 @@ namespace DataBaseWorker.Repositores
             context.CloseConnect();
         }
 
-        public void DeleteAt(long ID)
+        public EntityPersonalFileExpulsion DeleteAt(long ID)
         {
             DataSet data = new DataSet();
             DataTable table;
@@ -144,6 +148,19 @@ namespace DataBaseWorker.Repositores
             OleDbCommandBuilder builder = new OleDbCommandBuilder(context.PersonalFilesEnding);
             context.PersonalFilesEnding.Update(data);
             context.CloseConnect();
+
+            return EntityPersonalFileExpulsion
+                .GetBuilder()
+                .SetId(row["Код"].ToString())
+                .SetIdOrder(row["Код_приказа"].ToString())
+                .SetBaseClass(row["Класс"].ToString())
+                .SetDateReceipt(row["Дата_поступления"].ToString())
+                .SetCourse(row["Курс"].ToString())
+                .SetGroup(row["Группа"].ToString())
+                .SetSpeciality(row["Специальность"].ToString())
+                .SetIdPerson(row["Код_персоны"].ToString())
+                .SetBaseAdmission(row["База_поступления"].ToString())
+                .Build();
         }
 
         public void Delete(EntityPersonalFileExpulsion fileEnding) => DeleteAt(fileEnding.ID);

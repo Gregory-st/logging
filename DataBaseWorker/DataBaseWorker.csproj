@@ -68,8 +68,10 @@
     <Compile Include="Entites\Models\ModelPersonalFileActive.cs" />
     <Compile Include="Entites\Models\ModelTransfer.cs" />
     <Compile Include="Exceptions\NotFoundDictionaryException.cs" />
+    <Compile Include="Exceptions\NotFoundException.cs" />
     <Compile Include="Exceptions\NotFoundFileConfigConnectionException.cs" />
     <Compile Include="Exceptions\NotFoundFileDataBaseException.cs" />
+    <Compile Include="Exceptions\NotFoundFilePersonWithIdException.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Repositores\RepositoryBaseAdmission.cs" />
     <Compile Include="Repositores\RepositoryDictionaryCourse.cs" />

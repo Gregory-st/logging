@@ -2,6 +2,7 @@
 using DataBaseWorker.Context;
 using DataBaseWorker.Entites;
 using DataBaseWorker.Entites.Models;
+using DataBaseWorker.Exceptions;
 using System;
 using System.Data;
 using System.Data.OleDb;
@@ -47,39 +48,10 @@ namespace DataBaseWorker.Repositores
             context.CloseConnect();
             return activeFiles;
         }
-        public ModelPersonalFileActive GetById(long ID)
-        {
-            DataSet data = new DataSet();
-            DataTable table;
-
-            context.OpenConnect();
-            context.PersonalFilesActive.Fill(data);
-            table = data.Tables[0];
-
-            ModelPersonalFileActive activeFile = null;
-            for (int i = 0; i < table.Rows.Count; i++)
-            {
-                if (Convert.ToInt64(table.Rows[i][0]) != ID) continue;
-
-                activeFile = new ModelPersonalFileActive(EntityPersonalFileActive
-                    .GetBuilder()
-                    .SetId(table.Rows[i]["Код"].ToString())
-                    .SetIdBaseAdmission(table.Rows[i]["Код_базы_поступления"].ToString())
-                    .SetCourse(table.Rows[i]["Курс"].ToString())
-                    .SetBaseClass(table.Rows[i]["Класс"].ToString())
-                    .SetDateReceipt(table.Rows[i]["Дата_поступления"].ToString())
-                    .SetSpeciality(table.Rows[i]["Специальность"].ToString())
-                    .SetIdPerson(table.Rows[i]["Код_персоны"].ToString())
-                    .SetIdTransfer(table.Rows[i]["Код_перевода"].ToString())
-                    .SetIdGroup(table.Rows[i]["Код_группы"].ToString())
-                    .Build()
-                    );
-
-                break;
-            }
-            context.CloseConnect();
-            return activeFile;
-        }
+        public ModelPersonalFileActive GetById(long ID) => Array.Find(Get(), i => i.ID == ID) ?? throw new NotFoundFilePersonWithIdException();
+        public ModelPersonalFileActive GetByIdPerson(long ID) => Array.Find(Get(), i => i.IdPerson == ID) ?? throw new NotFoundFilePersonWithIdException("персональных данных");
+        public ModelPersonalFileActive[] GetByIdGroup(long ID) => Array.FindAll(Get(), i => i.IdGroup == ID) ?? throw new NotFoundFilePersonWithIdException("группы");
+        public ModelPersonalFileActive[] GetByIdBaseAdmission(long ID) => Array.FindAll(Get(), i => i.IdBaseAdmission == ID) ?? throw new NotFoundFilePersonWithIdException("базы поступления");
 
         public ModelPersonalFileActive[] GetSortByGroups()
         {
@@ -161,7 +133,7 @@ namespace DataBaseWorker.Repositores
             context.CloseConnect();
         }
 
-        public void DeleteAt(long ID)
+        public EntityPersonalFileExpulsion DeleteAt(long ID)
         {
             DataSet data = new DataSet();
             DataTable table;
@@ -180,13 +152,22 @@ namespace DataBaseWorker.Repositores
                 }
             }
 
-            if (row == null) throw new Exception();
+            if (row == null) throw new NotFoundFilePersonWithIdException();
             row.Delete();
 
             OleDbCommandBuilder builder = new OleDbCommandBuilder(context.PersonalFilesActive);
             context.PersonalFilesActive.Update(data);
             context.CloseConnect();
+
+            return EntityPersonalFileExpulsion
+                    .GetBuilder()
+                    .SetCourse(row["Курс"].ToString())
+                    .SetBaseClass(row["Класс"].ToString())
+                    .SetDateReceipt(row["Дата_поступления"].ToString())
+                    .SetSpeciality(row["Специальность"].ToString())
+                    .SetIdPerson(row["Код_персоны"].ToString())
+                    .Build();
         }
-        public void Delete(EntityPersonalFileActive fileActive) => DeleteAt(fileActive.ID);
+        public EntityPersonalFileExpulsion Delete(EntityPersonalFileActive fileActive) => DeleteAt(fileActive.ID);
     }
 }

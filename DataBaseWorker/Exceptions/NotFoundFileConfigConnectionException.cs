@@ -2,9 +2,9 @@
 
 namespace DataBaseWorker.Exceptions
 {
-    public class NotFoundFileConfigConnectionException : Exception
+    public class NotFoundFileConfigConnectionException : NotFoundException
     {
         public NotFoundFileConfigConnectionException() { }
-        public NotFoundFileConfigConnectionException(string message) : base(message) { }
+        public NotFoundFileConfigConnectionException(string message) : base(Prompt + message) { }
     }
 }

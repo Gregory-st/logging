@@ -3,13 +3,13 @@ using System.Runtime.Serialization;
 
 namespace DataBaseWorker.Exceptions
 {
-    public class NotFoundDictionaryException : Exception
+    public class NotFoundDictionaryException : NotFoundException
     {
         public NotFoundDictionaryException()
         {
         }
 
-        public NotFoundDictionaryException(string message) : base(message)
+        public NotFoundDictionaryException(string message) : base(Prompt + message)
         {
         }
 

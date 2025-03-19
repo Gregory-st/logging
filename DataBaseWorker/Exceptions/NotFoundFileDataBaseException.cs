@@ -2,9 +2,9 @@
 
 namespace DataBaseWorker.Exceptions
 {
-    public class NotFoundFileDataBaseException : Exception
+    public class NotFoundFileDataBaseException : NotFoundException
     {
         public NotFoundFileDataBaseException() { }
-        public NotFoundFileDataBaseException(string message) : base(message) { }
+        public NotFoundFileDataBaseException(string message) : base(Prompt + message) { }
     }
 }

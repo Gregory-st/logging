@@ -1,6 +1,7 @@
 ﻿using DataBaseWorker.Context;
 using DataBaseWorker.Entites;
 using DataBaseWorker.Entites.Models;
+using DataBaseWorker.Exceptions;
 using System;
 using System.Data;
 using System.Data.OleDb;
@@ -46,37 +47,9 @@ namespace DataBaseWorker.Repositores
             return tranFiles;
         }
 
-        public ModelPersonalExpulsion GetById(long ID)
-        {
-            DataSet data = new DataSet();
-            DataTable table;
-
-            context.OpenConnect();
-            context.PersonalFilesTransfering.Fill(data);
-            table = data.Tables[0];
-
-            ModelPersonalExpulsion tranFile = null;
-            for (int i = 0; i < table.Rows.Count; i++)
-            {
-                if (Convert.ToInt64(table.Rows[i][0]) != ID) continue;
-                tranFile = new ModelPersonalExpulsion(EntityPersonalFileExpulsion
-                    .GetBuilder()
-                    .SetId(table.Rows[i]["Код"].ToString())
-                    .SetIdOrder(table.Rows[i]["Код_приказа"].ToString())
-                    .SetBaseClass(table.Rows[i]["Класс"].ToString())
-                    .SetDateReceipt(table.Rows[i]["Дата_поступления"].ToString())
-                    .SetCourse(table.Rows[i]["Курс"].ToString())
-                    .SetGroup(table.Rows[i]["Группа"].ToString())
-                    .SetSpeciality(table.Rows[i]["Специальность"].ToString())
-                    .SetIdPerson(table.Rows[i]["Код_персоны"].ToString())
-                    .SetBaseAdmission(table.Rows[i]["База_поступления"].ToString())
-                    .Build()
-                    );
-                break;
-            }
-            context.CloseConnect();
-            return tranFile;
-        }
+        public ModelPersonalExpulsion GetById(long ID) => Array.Find(Get(), i => i.ID == ID) ?? throw new NotFoundFilePersonWithIdException();
+        public ModelPersonalExpulsion GetByIdPerson(long ID) => Array.Find(Get(), i => i.IdPerson == ID) ?? throw new NotFoundFilePersonWithIdException("личного дела");
+        public ModelPersonalExpulsion GetByIdOrder(long ID) => Array.Find(Get(), i => i.IdOrder == ID) ?? throw new NotFoundFilePersonWithIdException("приказа");
 
         public void Add(EntityPersonalFileExpulsion fileTransp)
         {
@@ -151,7 +124,7 @@ namespace DataBaseWorker.Repositores
             context.CloseConnect();
         }
 
-        public void DeleteAt(long ID)
+        public EntityPersonalFileExpulsion DeleteAt(long ID)
         {
             DataSet data = new DataSet();
             DataTable table;
@@ -176,6 +149,19 @@ namespace DataBaseWorker.Repositores
             OleDbCommandBuilder builder = new OleDbCommandBuilder(context.PersonalFilesTransfering);
             context.PersonalFilesTransfering.Update(data);
             context.CloseConnect();
+
+            return EntityPersonalFileExpulsion
+                    .GetBuilder()
+                    .SetId(row["Код"].ToString())
+                    .SetIdOrder(row["Код_приказа"].ToString())
+                    .SetBaseClass(row["Класс"].ToString())
+                    .SetDateReceipt(row["Дата_поступления"].ToString())
+                    .SetCourse(row["Курс"].ToString())
+                    .SetGroup(row["Группа"].ToString())
+                    .SetSpeciality(row["Специальность"].ToString())
+                    .SetIdPerson(row["Код_персоны"].ToString())
+                    .SetBaseAdmission(row["База_поступления"].ToString())
+                    .Build();
         }
 
         public void Delete(EntityPersonalFileExpulsion fileTransp) => DeleteAt(fileTransp.ID);
